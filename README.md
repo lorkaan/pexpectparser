@@ -34,7 +34,7 @@ import pexpectParser as pp
 parser = pp.Parser(<Grammar>)
 ```
 
-where <Grammar> is a Grammar Object from the Parse Grammar Library.
+where `<Grammar>` is a Grammar Object from the Parse Grammar Library.
 
 # Dependencies
 
