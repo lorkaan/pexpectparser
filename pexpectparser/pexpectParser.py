@@ -22,13 +22,9 @@ class Parser:
                 else:
                     child.sendline(cur)
             except pexpect.exceptions.TIMEOUT:
-                child.close()
-                print(f'Timeout Occured at: {cur}')
-                return None
+                # Just to possibly separate out the timeout and EOF for future implementations
+                raise
             except pexpect.exceptions.EOF:
-                child.close(f'EOF Occured at: {cur}')
-                print("")
-                return None
+                # Just to possibly separate out the timeout and EOF for future implementations
+                raise
         return child
-        
-        
