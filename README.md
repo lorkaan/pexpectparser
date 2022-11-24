@@ -35,6 +35,7 @@ parser = pp.Parser(<Grammar>)
 ```
 
 where `<Grammar>` is a Grammar Object from the Parse Grammar Library.
+- for more information about `<Grammar>` objects, see [parsegrammar](https://github.com/lorkaan/parsegrammar)
 
 ## API Usage
 ```
@@ -44,8 +45,6 @@ process = parser.run()
 where `type(process)` is `<class 'pexpect.pty_spawn.spawn'>`,
 - meaning that `process` is an object returned from `pexpect.spawn(<cmd>)`
 
-where `<cmd>` is the start symbol of `<Grammar>`
-- for more information about `<Grammar>` objects, see [parsegrammar](https://github.com/lorkaan/parsegrammar)
 
 ### Errors that can be thrown:
 
